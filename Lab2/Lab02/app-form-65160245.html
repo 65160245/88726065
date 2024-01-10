@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <title>ฟอร์มสมัครงาน</title>
+  <style>
+    label[for="name"] {
+      margin-right: 155px;
+    }
+    input[name="surname"] {
+      margin-right: 100px;
+    }
+    label[for="salary"] {
+      margin-right: 55px;
+    }
+    input[name="start_date"] {
+      margin-right: 100px;
+    }
+    label[for="phone_number"] {
+      margin-right: 75px;
+    }
+    input[name="phone_number_home"] {
+      margin-right: 100px;
+    }
+  </style>
+</head>
+<body>
+  <h1>ฟอร์มสมัครงาน</h1>
+  
+  <form action="/submit" method="post">
+    <label for="name">ชื่อ:</label>
+    <label for="name">นามสกุล:</label><br>
+    <input type="text" id="name" name="name" required>
+    <input type="text" id="surname" name="surname" required><br>
+
+    <label for="email">อีเมล:</label><br>
+    <input type="email" id="email" name="email" required><br>
+
+    <label for="website">เว็บไซต์ผลงาน:</label><br>
+    <input type="url" id="website" name="website"><br>
+
+    <label for="position">ตำแหน่งที่ต้องการสมัคร:</label><br>
+    <input type="text" id="position" name="position" required><br>
+
+    <label for="salary">เงินเดือนที่ต้องการ:</label>
+    <label for="salary">จะเริ่มงานได้เมื่อไหร่:</label><br>
+    <input type="number" id="salary" name="salary" required>
+    <input type="date" id="start_date" name="start_date" required><br>
+    
+    <label for="phone_number">โทรศัพท์มือถือ:</label>
+    <label for="phone_number_home">โทรศัพท์บ้าน:</label><br>
+    <input type="tel" id="phone_number" name="phone_number" required>
+    <input type="tel" id="phone_number_home" name="phone_number_home"><br>
+
+    <label for="move">คุณสะดวกที่จะย้ายที่อยู่หรือไม่:</label><br>
+    <input type="radio" id="move1" name="move" value="สะดวก">
+    <label for="move1">สะดวก</label>
+    <input type="radio" id="move2" name="move" value="ไม่สะดวก">
+    <label for="move2">ไม่สะดวก</label>
+    <input type="radio" id="move3" name="move" value="ไม่แน่ใจ">
+    <label for="move3">ไม่แน่ใจ</label><br>
+
+    <label for="work_experience">ลักษณะงานที่ทำล่าสุด:</label><br>
+    <textarea id="work_experience" name="work_experience" rows="1" cols="50"></textarea><br>
+
+    <label for="questions">คำถามเพิ่มเติม:</label><br>
+    <textarea id="questions" name="questions" rows="4" cols="50"></textarea><br>
+
+    <input type="submit" value="ส่งใบสมัคร">
+  </form>
+</body>
+</html>
